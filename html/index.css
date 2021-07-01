@@ -1,0 +1,94 @@
+body {
+  background: none !important;
+}
+
+#container {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(36, 36, 36);
+  border: 2px solid aliceblue;
+}
+
+button {
+  background-color: aliceblue;
+  padding: 12px;
+}
+
+input {
+  margin-bottom: 5px;
+  width: 90%;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.small {
+	font-size: 25px;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 35px 20px;
+  height: 100%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(173, 173, 173);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+
+#Home {background-color: rgb(36, 36, 36);}
+#Name {background-color: rgb(36, 36, 36);}
+#Plate {background-color: rgb(36, 36, 36);}
+#BOLO {background-color: rgb(36, 36, 36);}

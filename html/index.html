@@ -1,0 +1,133 @@
+<html>
+	<head>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <title>Abel Gaming MDT</title>
+	</head>
+	<body>
+        <div id='container'>
+        
+                <!-- Navigation Bar-->
+                <button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
+                <button class="tablink" onclick="openPage('Name', this, 'blue')">Name Search</button>
+                <button class="tablink" onclick="openPage('Plate', this, 'blue')">Plate Search</button>
+                <button class="tablink" onclick="openPage('BOLO', this, 'blue')">Empty Tab</button>
+
+                <!-- Home Page -->
+                <div id="Home" class="tabcontent">
+                        <center><h1>Los Santos Police Department</h1></center>
+
+                        <div>
+                                <h2>Welcome to the LSPD Homepage!</h2>
+                                <p>Welcome to the homepage of the LSPD! Things can easily be added here with simpe HTML code!</p>
+                                <hr>
+                        </div>
+                </div>
+
+                <!-- Name Search -->
+                <div id="Name" class="tabcontent">
+                        <!-- Header -->
+                        <center><h2>Los Santos Police Department - Name Search</h2></center>
+
+                        <hr>
+                        
+                        <!-- Search Bar -->
+                        <center>
+                                <form id="form">
+                                        <input placeholder="Enter First Name" id="inputfirstname"></input>
+                                        <input placeholder="Enter Last Name" id="inputlastname"></input><br>
+                                        <button id="submitname" type="submit">Search Name</button>
+                                </form>
+                        </center>
+
+                        <center>
+                                <div class="row">
+                                        <div class="column">
+                                                <h3>First Name</h3>
+                                                <font color="green"><p id="personfirst"></p></font>
+                                        </div>
+        
+                                        <div class="column">
+                                                <h3>Last Name</h3>
+                                                <font color="green"><p id="personlast"></p></font>
+                                        </div>
+        
+                                        <div class="column">
+                                                <h3>Job</h3>
+                                                <font color="green"><p id="personjob"></p></font>
+                                        </div>
+
+                                        <div class="column">
+                                                <h3>DOB</h3>
+                                                <font color="green"><p id="persondob"></p></font>
+                                        </div>
+
+                                        <div class="column">
+                                                <h3>Sex</h3>
+                                                <font color="green"><p id="personsex"></p></font>
+                                        </div>
+
+                                        <div class="column">
+                                                <h3>Height</h3>
+                                                <font color="green"><p id="personheight"></p></font>
+                                        </div>
+                                </div>
+                                </center>
+                </div>
+
+                <!-- Plate Search -->
+                <div id="Plate" class="tabcontent">
+                        <!-- Header -->
+                        <center><h2>Los Santos Police Department - Plate Search</h2></center>
+
+                        <hr>
+
+                        <!-- Search Bar -->
+                        <center>
+                                <form id="form">
+                                        <input placeholder="Enter Plate" id="inputplate"> </input> <button id="submitplate" type="submit">Search Plate</button>
+                                </form>
+                        </center>
+
+                        <!-- Owner Info -->
+                        <center>
+                                <h3>Owner Card</h3>
+                                <div class="card">
+                                        <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="John" style="width:100%">
+                                        <h1 id="vehowner"></h1>
+                                        <p class="title" id="vehownerjob"></p>
+                                </div>
+                        </center>
+
+                        <!-- Vehicle Info -->
+                        <center>
+                        <div class="row">
+                                <div class="column">
+                                        <h3>Plate</h3>
+                                        <p id="vehplate"></p>
+                                </div>
+
+                                <div class="column">
+                                        <h3>Model</h3>
+                                        <p id="vehname"></p>
+                                </div>
+
+                                <div class="column">
+                                        <h3>Seats</h3>
+                                        <p id="vehwanted"></p>
+                                </div>
+                        </div>
+                        </center>
+                </div>
+
+                <!-- BOLOS -->
+                <div id="BOLO" class="tabcontent">
+                        <center><h2>Los Santos Police Department - Empty Tab</h2></center>
+                        <br>
+                </div>
+                
+        </div>
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>
