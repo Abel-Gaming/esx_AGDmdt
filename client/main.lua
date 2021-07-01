@@ -8,9 +8,9 @@ Citizen.CreateThread(function()
 	end
 
 	while true do
-        Citizen.Wait(10)
-        ESX.PlayerData = ESX.GetPlayerData()
-    end
+        	Citizen.Wait(10)
+        	ESX.PlayerData = ESX.GetPlayerData()
+    	end
 end)
 
 Citizen.CreateThread(function()
